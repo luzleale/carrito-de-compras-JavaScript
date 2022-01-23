@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d2d0d9;
+  color: #244040;
+  transition: background-color 700ms ease;
+}
+
+.darkMode {
+  background-color: #244040;
+  color: #d2d0d9;
+}
+
+/*Estilos de la NavBar*/
+
+.headerTitulo {
+  color: #f29544;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  margin-right: 1rem;
+}
+
+.tituloLogo {
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.iconoLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f29544;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Botón del carrito*/
+.contenedorBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#boton-carrito {
+  border: none;
+  color: white;
+  font-size: 40px;
+  background-color: #f29544;
+  border-radius: 20%;
+  padding: 10px 20px;
+  margin-left: 0 auto;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+#boton-carrito:hover {
+  cursor: pointer;
+  color: #f29544;
+  background-color: white;
+}
+#boton-carrito:focus {
+  outline: none;
+}
+
+/*Estilos generales del Main*/
+
+.tituloPrincipal {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.iconoTitulo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bannerPrincipal {
+  height: 60vh;
+  background-image: url(./images/makeUpImg4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: inherit;
+  padding-bottom: 3rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #244040;
+}
+
+.selectEstilos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 40%;
+  border: 2px solid #f29544;
+  color: #f29544;
+  margin: 2rem auto;
+  padding: 0.5rem 0.5rem;
+  font-size: 2rem;
+  background-color: #244040;
+}
+
+/*Estilos del contenedor de los productos del array de stock*/
+
+#contenedor-productos {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.producto {
+  max-width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 15px #d96523;
+}
+
+.card .card-image .card-title {
+  color: #d96523;
+  position: unset;
+  font-size: 2rem;
+}
+
+.card .card-image img {
+  max-width: 100%;
+}
+
+.card-image h3 {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.cardPadding {
+  padding-left: 3rem;
+}
+
+.iconoDeAgregar {
+  font-size: 2.5rem;
+  color: #d2d0d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnEstilo {
+  background-color: #d96523;
+}
+
+.btnEstilo:hover {
+  background-color: #244040;
+}
+
+/*Productos agregados al carrito*/
+.tituloCarrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.productoEnCarrito {
+  border-left: 5px solid #d2d0d9;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.productoEnCarrito:hover {
+  border-left: 5px solid #244040;
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: #d96523;
+  border: none;
+  font-size: 24px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
+/*Estilos del modal*/
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: #244040;
+  padding-bottom: 1rem;
+}
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: red;
+  border: none;
+  background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+  outline: none;
+}
+.modal-carrito .precioProducto {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: end;
+}
+
+/*Estilos del mapa del local, traído a través de un iframe en el html*/
+.mapaEstilos {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.tituloMapa {
+  padding-right: 2rem;
+  font-size: 1.8rem;
+  color: #d96523;
+  font-weight: bold;
+  text-align: center;
+  max-width: 100%;
+}
+.mapaEstilos iframe {
+  max-width: 100%;
+  height: min-content;
+}
+.mapaEstilos ul {
+  padding-left: 4rem;
+}
+.mapaEstilos ul li {
+  color: #d2d0d9;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  align-items: center;
+  max-width: 100%;
+}
+
+/*Estilos del footer*/
+
+.estilosFooter {
+  background-image: linear-gradient(#244040, #68736f);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.divFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  margin-top: 1rem;
+}
+.divFooter h5 {
+  color: #d2d0d9;
+  padding-top: 2.8rem;
+  font-size: 1.2rem;
+}
+.divFooter img {
+  width: 100px;
+  height: 100px;
+  padding-top: 1rem;
+}
+.flechaFooter {
+  padding-left: 1rem;
+  font-size: 3rem;
+  color: #d2d0d9;
+}

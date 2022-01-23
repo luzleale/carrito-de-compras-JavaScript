@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "nombre": "Labial",
+    "color": "rojo",
+    "precio": 1200,
+    "marca": "Maybelline",
+    "img": "./images/imglabial1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Labial",
+    "color": "rosa",
+    "precio": 1000,
+    "marca": "Rimmel",
+    "img": "./images/imglabial1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Labial",
+    "color": "violeta",
+    "precio": 800,
+    "marca": "Rimmel",
+    "img": "./images/imglabial1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Labial",
+    "color": "rosa oscuro",
+    "precio": 1300,
+    "marca": "Loreal",
+    "img": "./images/imglabial1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 5,
+    "nombre": "Labial",
+    "color": "rosa claro",
+    "precio": 1200,
+    "marca": "Maybelline",
+    "img": "./images/imglabial1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 6,
+    "nombre": "Rubor",
+    "color": "rosa",
+    "precio": 800,
+    "marca": "Loreal",
+    "img": "./images/imgrubor1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 7,
+    "nombre": "Rubor",
+    "color": "marrón claro",
+    "precio": 900,
+    "marca": "Maybelline",
+    "img": "./images/imgrubor1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 8,
+    "nombre": "Rubor",
+    "color": "marrón oscuro",
+    "precio": 900,
+    "marca": "Maybelline",
+    "img": "./images/imgrubor1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 9,
+    "nombre": "Rimel",
+    "color": "negro",
+    "precio": 1400,
+    "marca": "Loreal",
+    "img": "./images/imgrimmel1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 10,
+    "nombre": "Rimel",
+    "color": "negro",
+    "precio": 1800,
+    "marca": "Maybelline",
+    "img": "./images/imgrimmel1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 11,
+    "nombre": "Rimel",
+    "color": "azul",
+    "precio": 1500,
+    "marca": "Rimmel",
+    "img": "./images/imgrimmel1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 12,
+    "nombre": "Rimel",
+    "color": "negro",
+    "precio": 1500,
+    "marca": "Rimmel",
+    "img": "./images/imgrimmel1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 13,
+    "nombre": "Delineador",
+    "color": "negro",
+    "precio": 1200,
+    "marca": "Rimmel",
+    "img": "./images/imgdelineador.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 14,
+    "nombre": "Delineador",
+    "color": "negro",
+    "precio": 1400,
+    "marca": "Maybelline",
+    "img": "./images/imgdelineador.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 15,
+    "nombre": "Delineador",
+    "color": "azul",
+    "precio": 900,
+    "marca": "Loreal",
+    "img": "./images/imgdelineador.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 16,
+    "nombre": "Sombras",
+    "color": "tonalidades rosas",
+    "precio": 2300,
+    "marca": "Rimmel",
+    "img": "./images/imgsombras1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 17,
+    "nombre": "Sombras",
+    "color": "tonalidades marrones",
+    "precio": 2500,
+    "marca": "Maybelline",
+    "img": "./images/imgsombras1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 18,
+    "nombre": "Sombras",
+    "color": "tonalidades azules",
+    "precio": 1000,
+    "marca": "Loreal",
+    "img": "./images/imgsombras1.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 19,
+    "nombre": "Sombras Gold",
+    "color": "varios",
+    "precio": 2800,
+    "marca": "Rimmel",
+    "img": "./images/imgsombras2.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 20,
+    "nombre": "Sombras Gold",
+    "color": "varios",
+    "precio": 3000,
+    "marca": "Maybelline",
+    "img": "./images/imgsombras2.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 21,
+    "nombre": "Sombras Gold",
+    "color": "varios",
+    "precio": 2600,
+    "marca": "Loreal",
+    "img": "./images/imgsombras2.jpg",
+    "cantidad": 1
+  }
+]

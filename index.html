@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Link a fontawesom-->
+    <script
+      src="https://kit.fontawesome.com/d98369cf2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Link css de bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Link a css de toastify-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!--Link a mi archivo css-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Tienda de maquillajes</title>
+  </head>
+  <body>
+    <!--Inicio del header-->
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img
+            src="./images/logo-make-up.png"
+            class="d-inline-block align-text-top"
+            width="150"
+            height="150"
+            alt="Logo del sitio"
+          />
+          <h3
+            class="header__enlace active fs-4 fw-bold headerTitulo"
+            aria-current="page"
+            href="./index.html"
+          >
+            I L<i class="far fa-heart iconoLogo"></i>ve Make Up
+          </h3>
+          <ul>
+            <li>
+              <button id="btnLightMode" class="btnLightMode btn btn-light">
+                <i class="far fa-lightbulb"></i>
+              </button>
+            </li>
+            <li>
+              <button id="btnDarkMode" class="btnDarkMode btn btn-dark">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--Inicio del contenido-->
+      <h1 class="tituloPrincipal">
+        I L<i class="far fa-heart iconoTitulo"></i>ve Make Up
+      </h1>
+      <!--Banner-->
+      <div class="bannerPrincipal"></div>
+      <!--Mi carrito de compras-->
+      <div class="contenedorBtn">
+        <button id="boton-carrito">
+          <i class="fas fa-shopping-cart"></i
+          ><span id="contadorCarrito">0</span>
+        </button>
+      </div>
+      <!--Selector por nombre de los productos-->
+      <select id="selectNombre" class="selectEstilos">
+        <option value="all">Ver todos los productos</option>
+        <option value="Sombras Gold">Sombras para ojos línea premium</option>
+        <option value="Sombras">Sombras</option>
+        <option value="Delineador">Delineadores</option>
+        <option value="Rimel">Rimmels</option>
+        <option value="Rubor">Rubores</option>
+        <option value="Labial">Labiales</option>
+      </select>
+      <!--Contenedor de productos agregados desde el DOM-->
+      <section id="contenedor-productos"></section>
+      <!--Contenedor de productos en el carrito-->
+      <div class="modal-contenedor">
+        <div class="modal-carrito">
+          <h3 class="tituloCarrito">Mis productos</h3>
+          <button id="carritoCerrar">
+            <i class="fas fa-times-circle"></i>
+          </button>
+          <div id="carrito-contenedor"></div>
+          <p class="precioProducto">
+            Total a pagar: $<span id="precioTotal">0</span>
+          </p>
+          <div
+            id="divFinalizar"
+            class="d-grid gap-2 d-md-flex justify-content-md-end"
+          >
+            <button id="btnFin" class="btn btn-success btn-lg">
+              Finalizar Compra
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Pie de página-->
+    <footer class="estilosFooter">
+      <div class="mapaEstilos">
+        <h2 class="tituloMapa">
+          Puedes encontrar nuestro showroom en
+          <i class="fas fa-long-arrow-alt-right flechaFooter"></i>
+        </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.48890011507!2d-58.012967985018875!3d-35.56632291656919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95980d4db02cc3cf%3A0x3e24f4314b8d5b28!2sAv.%20Hip%C3%B3lito%20Yrigoyen%20551%2C%20Chascom%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1636169667297!5m2!1ses-419!2sar"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <ul>
+          <li>Atención presencial: Lunes a Viernes de 10 a 14 hs.</li>
+          <li>Teléfono de contacto: 0000-0000</li>
+        </ul>
+      </div>
+      <div class="col fs-5 text-uppercase divFooter">
+        <img
+          src="./images/logo-make-up.png"
+          class="d-inline-block align-text-top"
+          width="150"
+          height="150"
+          alt="Logo del sitio"
+        />
+        <h5>Todos los derechos reservados</h5>
+      </div>
+    </footer>
+    <!--Link js de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link js de toastify-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!--Mis script.js-->
+    <script src="./darkMode.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
