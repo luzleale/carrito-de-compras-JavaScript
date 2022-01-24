@@ -137,7 +137,7 @@
   {
     "id": 16,
     "nombre": "Sombras",
-    "color": "tonalidades rosas",
+    "color": "rosa",
     "precio": 2300,
     "marca": "Rimmel",
     "img": "./images/imgsombras1.jpg",
@@ -146,7 +146,7 @@
   {
     "id": 17,
     "nombre": "Sombras",
-    "color": "tonalidades marrones",
+    "color": "marrón",
     "precio": 2500,
     "marca": "Maybelline",
     "img": "./images/imgsombras1.jpg",
@@ -155,7 +155,7 @@
   {
     "id": 18,
     "nombre": "Sombras",
-    "color": "tonalidades azules",
+    "color": "azul",
     "precio": 1000,
     "marca": "Loreal",
     "img": "./images/imgsombras1.jpg",
